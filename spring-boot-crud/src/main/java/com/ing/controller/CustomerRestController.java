@@ -17,6 +17,7 @@ public class CustomerRestController {
 	
 	@GetMapping("/customers/")
 	public List<Customer> getCustomers(){
+		System.out.println("inside getCustomers method! ");
 		return customReposoitory.findAll();
 	}
 
